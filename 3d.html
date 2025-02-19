@@ -1,0 +1,23 @@
+<html>
+    <head>
+        <title>It's JavaScript</title>
+    </head>
+    <body>
+        <h3>Your Tickets Details</h3><br>
+        <script>
+            let i=0;
+            let y=[3,5,7,9,11];
+            let x=prompt("No:of Tickets?");
+            x=Number(x);
+            if(x<=2){
+                document.getElementById("11").innerHTML="Tickets Booked<br>"+"Cost for"+x+"Tickets is"+((x*150));
+            }
+            else if(x>=6){
+                document.getElementById("11").innerHTML="Booking is Not Allowed";
+            }
+            else{
+                document.write("Tickets Booked <br>"+" cost for"+x+"Tickets is"+((x*150)-(x*(y[x-1]/100)*150)))
+            }
+        </script>
+    </body>
+</html>
